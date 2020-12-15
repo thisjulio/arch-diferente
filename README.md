@@ -22,9 +22,9 @@ docker-compose exec mongodb -u root -ppassword
 > exit
 bye
 ```
-Com isso já podemos partir para o control center para cadastrar os connectores, para isto você pode realizar o upload dos arquivos que se encontram na pasta `kafka-connect`.
+Com isso já podemos partir para o control center(http://localhost:9921) para cadastrar os connectores, para isto você pode realizar o upload dos arquivos que se encontram na pasta `kafka-connect`.
 
-Ao final deste processo você poder verificar que ao inserir dados na tabela no postgres, automaticamente os dados são levados para o mongo, elasticsearch e para a chamada de api.
+Ao final deste processo você poder verificar que ao inserir dados na tabela no postgres, automaticamente os dados são levados para o mongo (visualizar pelo mongo-express http://localhost:9091), elasticsearch (visualizar pelo kibana http://localhost:5601) e para a chamada de api.
 
 OBS.: Para o conector de API você pode mudar o parametro `http.api.url` do arquivo para apontar para um endpoint de teste seu (inclusive localhost!).
 
