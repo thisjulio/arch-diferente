@@ -1,0 +1,8 @@
+{
+  "name": "jogar_dado_mongodb",
+  "config": {
+    "connector.class": "at.grahsl.kafka.connect.mongodb.MongoDbSinkConnector",
+    "topics": "chupa_cabrateste",
+    "mongodb.connection.uri": "mongodb://teste:teste@mongodb:27017/teste?w=1&journal=true"
+  }
+}

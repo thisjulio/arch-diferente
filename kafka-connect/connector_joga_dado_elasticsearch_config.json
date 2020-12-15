@@ -1,0 +1,9 @@
+{
+  "name": "joga_dado_elasticsearch",
+  "config": {
+    "connector.class": "io.confluent.connect.elasticsearch.ElasticsearchSinkConnector",
+    "topics": "chupa_cabrateste",
+    "connection.url": "http://elasticsearch:9200",
+    "key.ignore": "true"
+  }
+}

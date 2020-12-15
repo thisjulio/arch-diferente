@@ -1,0 +1,15 @@
+{
+  "name": "pegar_do_postgres",
+  "config": {
+    "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+    "connection.url": "jdbc:postgresql://db_principal/postgres",
+    "connection.user": "postgres",
+    "connection.password": "password",
+    "dialect.name": "PostgreSqlDatabaseDialect",
+    "mode": "incrementing",
+    "incrementing.column.name": "id",
+    "timestamp.column.name": "",
+    "validate.non.null": "true",
+    "topic.prefix": "chupa_cabra"
+  }
+}

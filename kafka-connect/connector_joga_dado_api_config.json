@@ -1,0 +1,15 @@
+{
+  "name": "joga_dado_api",
+  "config": {
+    "connector.class": "io.confluent.connect.http.HttpSinkConnector",
+    "topics": "chupa_cabrateste",
+    "http.api.url": "https://eead69d31ae58705728b3ba1dbad6369.m.pipedream.net",
+    "request.body.format": "json",
+    "reporter.result.topic.replication.factor": "1",
+    "reporter.result.topic.partitions": "1",
+    "reporter.error.topic.replication.factor": "1",
+    "reporter.error.topic.partitions": "1",
+    "reporter.bootstrap.servers": "broker:29092",
+    "confluent.topic.bootstrap.servers": "broker:29092"
+  }
+}
